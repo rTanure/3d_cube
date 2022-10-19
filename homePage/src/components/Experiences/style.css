@@ -1,0 +1,65 @@
+.experiences-box{
+  background-color: var(--dark-layout-color);
+  padding-bottom: 100px;
+}
+
+.experiences-box .experiences-list {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.experiences-box .experience-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 200px;
+  align-items: center;
+  gap: 30px; 
+}
+
+.experiences-box .experience-box .description{
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center ;
+}
+
+.experiences-box .experience-box img{
+  width: 50%;
+  max-width: 130px;
+  filter: invert(0.7);
+}
+
+@media screen and (max-width: 650px) {
+  .experiences-box .experiences-list {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .experiences-box .experience-box {
+    gap: 10px;
+    flex-direction: row;
+    width: auto;
+    max-width: 400px;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .experiences-box .experience-box img {
+    flex: 1;
+    /* height: 70px; */
+    width: 70px;
+  }
+
+  .experiences-box .experience-box h4 {
+    font-size: 24px;
+  }
+
+  .experiences-box .experience-box button {
+    padding: 7px 20px;
+  }
+}

@@ -1,0 +1,114 @@
+.box-tecnologies {
+    padding-bottom: 130px;
+}
+
+.box-tecnologies .tech-painel{
+    display: flex;
+}
+
+.box-tecnologies .tech-painel .tech-list{
+    flex: 1;
+}
+
+.box-tecnologies .tech-painel .tech-description{
+    flex: 1;
+}
+
+.box-tecnologies .tech-painel .single-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-tecnologies .tech-painel .list-box{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.box-tecnologies .tech-painel .single-list .icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    filter: grayscale();
+    cursor: pointer;
+}   
+
+.box-tecnologies .tech-painel .single-list .icon.selected{
+    filter: grayscale(0) !important;
+}
+.box-tecnologies .tech-painel .single-list .icon:hover{
+    filter: grayscale(0.6);
+
+    -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.4);
+}
+
+.box-tecnologies .tech-painel .single-list .icon img{
+    width: 60%;
+}
+
+
+/*================================*/
+
+.box-tecnologies .tech-description .container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.box-tecnologies .tech-description .header{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.box-tecnologies .tech-description .icon{
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-tecnologies .tech-description .icon img{
+    width: 60%;
+}
+
+.box-tecnologies .tech-description .divider{
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--);
+
+    margin: 10px 0;
+}
+
+.box-tecnologies .tech-description p{
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .box-tecnologies .tech-painel{
+        flex-direction: column;
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    .box-tecnologies .tech-painel .single-list .icon{
+        width: 55px;
+        height: 55px;
+    }
+
+}

@@ -1,0 +1,158 @@
+.contact-box {
+    background-color: var(--card-brackground);
+    padding-bottom: 120px;
+}
+
+.contact-box .infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.contact-box .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    flex: 1;
+}
+
+.contact-box .contact-links button{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto
+}
+
+.contact-box .contact-links button .icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-box .contact-links button span{
+    width: 100%;
+    align-items: center;
+}  
+
+.contact-box .contact-links button img{
+    width: 60%;
+    filter:invert(0.8);
+}
+
+.contact-box .contact-links a.linkedin button img{
+    width: 55%;
+}
+
+.contact-box .contact-links a.github button{
+    background-color: var(--button-github);
+}
+
+.contact-box .contact-links a.linktree button{
+    background-color: var(--button-linktree);
+}
+
+.contact-box .contact-links a.linktree{
+    display: none;
+}
+
+.contact-box .contact-links a.linkedin button{
+    background-color: var(--button-linkedin);
+}
+
+
+/* Infos ============== */
+
+
+.contact-box .center-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.contact-box .contact-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.contact-box .contact-infos .single-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-box .contact-infos .single-info .icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.contact-box .contact-infos .single-info.email .icon{
+    background-color: var(--button-email);
+}
+
+.contact-box .contact-infos .single-info.phone .icon{
+    background-color: var(--button-phone);
+
+}
+
+.contact-box .contact-infos .single-info img{
+    width: 50%;
+    filter: invert(0.8);
+}
+
+.contact-box .contact-infos .single-info span{
+    font-size: 20px;
+}
+
+span.h-div {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-box {
+        padding-bottom: 80px;
+    }
+
+    .contact-box .infos {
+        flex-direction: column;
+    }
+
+    .contact-box .contact-links {
+        gap: 30px;
+    }
+
+    span.v-div {
+        display: none;
+    }
+
+    span.h-div {
+        display: initial;
+    }
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    
+
+    .contact-box .contact-infos span{
+        font-size: 17px !important;
+    }
+
+    .contact-box .contact-infos .single-info .icon{
+        width: 40px;
+        height: 40px;
+    }
+}

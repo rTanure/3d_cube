@@ -1,0 +1,52 @@
+.banner {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, var(--background) 0%, var(--header-background) 100%);
+    width: 100%;
+}
+
+.banner .content-limiter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner .content-limiter .description h2{
+    margin-bottom: 10px;
+}
+
+.banner .content-limiter .avatar{
+    height: 100%;
+}
+
+.banner img {
+    width: 400px;
+}
+
+@media screen and (max-width: 870px) {
+
+    .banner img {
+        width: 300px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .banner .description {
+        padding: 40px 0;
+    }
+
+    .banner .description h3{
+        font-size: 10px ;
+    }
+
+    .banner .description {
+        display: none;
+    }
+
+    .banner .avatar {
+        padding-top: 30px;
+    }
+ }

@@ -1,0 +1,35 @@
+:root {
+    /* TEXT */
+    --white-text: #ebebeb;
+    --black-text: #212121;
+
+    /* BACKGROUND */
+    --card-brackground: #757575;
+    --header-background: #540972;
+    --background: #1d1d1d;
+    --dark-layout-color: #1c0b24;
+    --footer-background: #0a0a0a;
+
+    /* BUTTON COLOR */
+    --button-linktree: #66921b;
+    --button-github: #141414;
+    --button-linkedin: #0077b5;
+    --button-email: #1f1797;
+    --button-phone: #159909;
+
+    --button-site: #1a10a5;
+
+    /* SCROLL */
+    --scroll: #a5a5a5;
+
+    /* DIVISIONS */
+    --green-div-color: #307067;
+    --gray-div-color: #656565;
+
+    
+    /* SIZES */
+    --content-size: 1170px;
+
+    /* GRAY */
+    --gray-90: rgb(25, 25, 25);
+}
